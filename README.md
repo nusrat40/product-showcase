@@ -11,7 +11,7 @@ A responsive, Redux-powered React application that fetches and displays products
 ---
 
 
-## 🚀 Features
+##  Features
 
 - **Product Listing**  
   – Fetches product data from `https://admin.refabry.com/api/all/product/get`  
