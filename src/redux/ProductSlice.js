@@ -3,8 +3,9 @@ import axios from 'axios';
 
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
   const response = await axios.get('https://admin.refabry.com/api/all/product/get');
-  return response.data.data;
+  return response.data.data.data; // ✅ proper array of products
 });
+
 
 const productSlice = createSlice({
   name: 'product',
