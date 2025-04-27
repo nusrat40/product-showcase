@@ -1,12 +1,37 @@
-# React + Vite
+# Product Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, Redux-powered React application that fetches and displays products from an external API. Built with:
 
-Currently, two official plugins are available:
+- **React** (via Vite)  
+- **Redux Toolkit** for state management  
+- **React Router** for client-side routing  
+- **Axios** for HTTP requests  
+- **Tailwind CSS** for styling  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- **Product Listing**  
+  – Fetches product data from `https://admin.refabry.com/api/all/product/get`  
+  – Displays in a responsive 1→2→3→4 column grid  
+  – Discount badge, price formatting, hover elevation
+
+- **Search / Filter**  
+  – Live search by name or description  
+  – “No products found” fallback
+
+- **Dynamic Routes**  
+  – `/product/:id` shows a full-page detail view  
+  – Image gallery, pricing, stock, SKU, category, and description
+
+- **Redux Toolkit**  
+  – `createAsyncThunk` for fetching  
+  – Slice state for `products`, `status`, `error`
+
+- **Tailwind CSS**  
+  – Utility-first responsive styling  
+  – Hover, focus, spacing, typography, grid, flex, aspect-ratio
+
+
